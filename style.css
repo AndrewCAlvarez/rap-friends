@@ -1,6 +1,7 @@
 :root {
   --color-bg: #f1f1f1;
   --color-txt: #212121;
+  --highlight-primary: #ed5959;
 
   /* Font sizes */
 }
@@ -60,6 +61,10 @@ h5 {
 small,
 .text_small {
   font-size: 0.8rem;
+}
+
+.highlight--primary {
+  color: var(--highlight-primary);
 }
 
 .container {
@@ -130,4 +135,70 @@ small,
 
 .icon--menu:hover {
   cursor: pointer;
+}
+
+/************************************
+*********************
+
+      HERO SECTION 
+
+*****************
+*************************************/
+.section--hero {
+  /* margin-top: 4rem; */
+
+  /* border-top: 4rem solid var(--highlight-primary); */
+}
+
+.hero-heading {
+  /* Padding on top and bottom allows for the marker effect behind the heading. */
+  padding: 4rem 5% 2rem 5%;
+  position: relative;
+  overflow: hidden;
+  color: var(--color-bg);
+}
+
+.hero-heading::before {
+  content: "";
+  height: 25rem;
+  width: 200vw;
+  background-color: var(--color-txt);
+  position: absolute;
+  top: 6vh;
+  left: -10vh;
+  z-index: -100;
+  rotate: z -5deg;
+}
+
+.heading--primary {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  font-family: "Permanent Marker";
+
+  /* background-color: var(--color-txt); */
+  /* border-bottom: 2rem solid var(--highlight-primary); */
+}
+
+.hero-main {
+  background-image: url(./images/urban.jpg);
+  background-size: cover;
+  height: 50rem;
+  background-position-x: -9rem;
+
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-rapper-name {
+  font-family: "Permanent Marker";
+  rotate: z 10deg;
+  margin-right: 1rem;
+}
+
+.hero-rapper-description {
+  width: 10rem;
 }
