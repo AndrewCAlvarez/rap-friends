@@ -85,11 +85,13 @@ small,
 }
 
 .nav-list {
-  margin-top: 2rem;
+  padding: 2rem 5% 2rem 5%;
   display: none;
   color: var(--color-bg);
   list-style: none;
   background: var(--color-txt);
+  position: fixed;
+  width: 90%;
 
   flex-direction: column;
   justify-content: center;
