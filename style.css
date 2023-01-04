@@ -72,12 +72,25 @@ small,
   background-color: var(--color-txt);
 }
 
+.logo--nav {
+  font-family: "Permanent Marker", cursive;
+
+  color: var(--color-bg);
+  letter-spacing: 1px;
+}
+
+.logo--nav:link,
+.logo--nav:visited {
+  text-decoration: none;
+}
+
 .nav {
   background-color: var(--color-txt);
   width: 90%;
   height: 2rem;
   position: fixed;
   top: 0;
+  z-index: 100;
 
   display: flex;
   justify-content: space-between;
@@ -86,12 +99,15 @@ small,
 
 .nav-list {
   padding: 2rem 5% 2rem 5%;
-  display: none;
+  display: flex;
+  width: 90%;
   color: var(--color-bg);
   list-style: none;
   background: var(--color-txt);
+  transition: 0.5s ease-in-out;
   position: fixed;
-  width: 90%;
+  top: -100vh;
+  z-index: 90;
 
   flex-direction: column;
   justify-content: center;
@@ -105,13 +121,6 @@ small,
 .nav-list-item:visited,
 .nav-list-item:link {
   text-decoration: none;
-}
-
-.logo--nav {
-  font-family: "Permanent Marker", cursive;
-
-  color: var(--color-bg);
-  letter-spacing: 1px;
 }
 
 .icon--menu {
