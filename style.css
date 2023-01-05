@@ -1,6 +1,7 @@
 :root {
-  --color-bg: #f1f1f1;
+  --color-bg: #dcdcdc;
   --color-txt: #212121;
+  --color-txt--sub: #cecece;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
 
@@ -199,7 +200,7 @@ small,
 
 .hero-main {
   /* background-image: url(./images/urban.jpg); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
     url(./images/urban.jpg);
   height: 50rem;
   /* background-size: cover; */
@@ -279,4 +280,79 @@ small,
   left: -5vw;
   z-index: -100;
   rotate: z -5deg;
+}
+
+.main-text {
+  /* background-color: var(--color-txt); */
+  color: var(--color-bg);
+  padding: 1rem;
+  letter-spacing: 1px;
+  text-indent: 1rem;
+  width: 90%;
+
+  position: relative;
+}
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text-right {
+  align-self: flex-end;
+  color: var(--color-txt--sub);
+  transform: skew(1deg);
+}
+
+.main-text-right::before {
+  content: "";
+  width: 100%;
+  background-color: var(--color-txt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  transform: skew(2deg);
+}
+
+.main-text-right::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid var(--color-txt);
+  scale: 0.5;
+  rotate: z -20deg;
+  left: calc(100% - 5rem);
+}
+
+.main-text-left {
+}
+
+.main-text-left::before {
+  content: "";
+  width: 100%;
+  background-color: var(--color-txt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  transform: skew(-2deg);
+}
+
+.main-text-left::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid var(--color-txt);
+  scale: 0.3;
+  rotate: z 20deg;
+  left: 0;
 }
