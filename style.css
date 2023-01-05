@@ -2,6 +2,7 @@
   --color-bg: #f1f1f1;
   --color-txt: #212121;
   --highlight-primary: #ed5959;
+  --highlight-secondary: rgba(241, 241, 241, 0.529);
 
   /* Font */
   --font-heading: "Permanent Marker", cursive;
@@ -95,7 +96,7 @@ small,
 .nav {
   background-color: var(--color-txt);
   width: 90%;
-  height: 2rem;
+  height: 3rem;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -179,6 +180,14 @@ small,
   letter-spacing: 0.4rem;
   font-family: "Permanent Marker", cursive;
 
+  /* This creates a gradient for the typography */
+  background: -webkit-linear-gradient(270deg, #f1c22d 0%, #ff7757 100%);
+  background-clip: border-box;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #bb2f2f00;
+
   /* background-color: var(--color-txt); */
   /* border-bottom: 2rem solid var(--highlight-primary); */
 }
@@ -192,10 +201,11 @@ small,
   /* background-image: url(./images/urban.jpg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url(./images/urban.jpg);
-  background-size: cover;
   height: 50rem;
-  background-position-x: -9rem;
-
+  /* background-size: cover; */
+  /* background-position-x: -9rem; */
+  background-size: 300%;
+  background-position: 47% 0%;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -203,13 +213,16 @@ small,
   align-items: flex-end;
 }
 
-.hero-rapper-name {
+.hero-artist-name {
+  font-size: 1.2rem;
   font-family: "Permanent Marker";
+  color: var(--highlight-secondary);
   rotate: z 10deg;
   margin-right: 1rem;
+  margin-top: -12rem;
 }
 
-.hero-rapper-description {
+.hero-artist-description {
   width: 10rem;
 }
 
@@ -222,11 +235,13 @@ small,
 *************************************/
 
 .section--main {
+  margin-top: -15vh;
   padding: 0px 5%;
   overflow: hidden;
 }
 
 .main-heading::before {
+  /* tag above heading */
   content: "USA";
   font-size: 1.3rem;
   padding: 0px 0.5rem;
@@ -254,6 +269,7 @@ small,
 }
 
 .main-heading::after {
+  /* highlighted background */
   content: "";
   height: 25rem;
   width: 200vw;
