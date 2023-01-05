@@ -2,6 +2,7 @@
   --color-bg: #dcdcdc;
   --color-txt: #212121;
   --color-txt--sub: #cecece;
+  --color-hero-red: #ed2106;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
 
@@ -19,7 +20,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  background-color: var(--color-bg);
+  background-color: var(--color-txt);
   color: var(--color-txt);
 
   font-family: var(--font-body);
@@ -236,9 +237,17 @@ small,
 *************************************/
 
 .section--main {
-  margin-top: -15vh;
   padding: 0px 5%;
   overflow: hidden;
+  position: relative;
+}
+
+.main-img-hero {
+  position: absolute;
+  width: 164%;
+  top: 28%;
+  left: 0;
+  z-index: -200;
 }
 
 .main-heading::before {
@@ -255,7 +264,7 @@ small,
   color: var(--color-txt);
   font-family: var(--font-body);
   position: absolute;
-  top: -20%;
+  top: -50%;
   left: -3%;
   rotate: -3deg;
 }
@@ -263,23 +272,30 @@ small,
 .main-heading {
   position: relative;
   color: var(--color-bg);
-  background-color: var(--color-txt);
+  /* background-color: var(--color-txt); */
   font-family: "Permanent Marker", cursive;
+  /* border: 0.2rem solid var(--color-bg); */
+
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-heading::after {
   /* highlighted background */
   content: "";
   height: 25rem;
-  width: 200vw;
-  background-color: var(--highlight-primary);
+  width: 210vw;
+  background-color: var(--color-hero-red);
   position: absolute;
-  top: 0;
-  left: -5vw;
+  top: 32%;
+  left: -13vw;
   z-index: -100;
   rotate: z -5deg;
+}
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-text {
@@ -289,13 +305,9 @@ small,
   letter-spacing: 1px;
   text-indent: 1rem;
   width: 90%;
+  margin-bottom: 2rem;
 
   position: relative;
-}
-
-.main-text-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .main-text-right {
@@ -316,7 +328,8 @@ small,
   transform: skew(2deg);
 }
 
-.main-text-right::after {
+/* Triangles used to create chat bubble */
+/* .main-text-right::after {
   content: "";
   position: absolute;
   width: 0;
@@ -327,7 +340,7 @@ small,
   scale: 0.5;
   rotate: z -20deg;
   left: calc(100% - 5rem);
-}
+} */
 
 .main-text-left {
 }
@@ -344,7 +357,8 @@ small,
   transform: skew(-2deg);
 }
 
-.main-text-left::after {
+/* Triangles used to create chat bubble */
+/* .main-text-left::after {
   content: "";
   position: absolute;
   width: 0;
@@ -355,4 +369,4 @@ small,
   scale: 0.3;
   rotate: z 20deg;
   left: 0;
-}
+} */
