@@ -1,8 +1,8 @@
 :root {
   --color-bg: #dcdcdc;
   --color-txt: #212121;
-  --color-txt--sub: #cecece;
-  --color-hero-red: #ed2106;
+  --color-txt--sub: #aaaaaa;
+  --color-hero-red: #da4104;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
 
@@ -244,9 +244,10 @@ small,
 
 .main-img-hero {
   position: absolute;
-  width: 164%;
-  top: 28%;
-  left: 0;
+  width: 100%;
+  top: 33%;
+  left: -17%;
+  scale: 2;
   z-index: -200;
 }
 
@@ -262,7 +263,7 @@ small,
   border-radius: 5%;
   background-color: var(--color-bg);
   color: var(--color-txt);
-  font-family: var(--font-body);
+  /* font-family: var(--font-body); */
   position: absolute;
   top: -50%;
   left: -3%;
@@ -282,7 +283,7 @@ small,
 
 .main-heading::after {
   /* highlighted background */
-  content: "";
+  /* content: "";
   height: 25rem;
   width: 210vw;
   background-color: var(--color-hero-red);
@@ -290,7 +291,7 @@ small,
   top: 32%;
   left: -13vw;
   z-index: -100;
-  rotate: z -5deg;
+  rotate: z -5deg; */
 }
 
 .main-text-container {
@@ -301,13 +302,11 @@ small,
 .main-text {
   /* background-color: var(--color-txt); */
   color: var(--color-bg);
-  padding: 1rem;
+  /* padding: 1rem; */
   letter-spacing: 1px;
   text-indent: 1rem;
-  width: 90%;
-  margin-bottom: 2rem;
-
-  position: relative;
+  width: 100%;
+  /* position: relative; */
 }
 
 .main-text-right {
@@ -355,6 +354,28 @@ small,
   z-index: -1;
   height: 100%;
   transform: skew(-2deg);
+}
+
+.img-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-box-img {
+  width: 100%;
+  position: relative;
+}
+
+.img-box-txt {
+  position: relative;
+  margin-bottom: 10rem;
+  color: var(--color-txt--sub);
+  font-size: small;
+  width: 95%;
 }
 
 /* Triangles used to create chat bubble */
