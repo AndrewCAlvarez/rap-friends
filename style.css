@@ -4,7 +4,7 @@
   --color-heading--secondary: #bebebe;
   --color-txt: #999;
   --color-txt--sub: #aaaaaa;
-  --color-hero-red: #da4104;
+  --color-hero-red: rgb(218, 65, 4);
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
 
@@ -155,6 +155,11 @@ small,
 *****************
 *************************************/
 .section--hero {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+
   /* margin-top: 4rem; */
 
   /* border-top: 4rem solid var(--highlight-primary); */
@@ -220,6 +225,18 @@ small,
   align-items: flex-end;
 }
 
+.hero-main::after {
+  content: "";
+  width: 200vw;
+  height: 5rem;
+  background-color: var(--color-bg);
+  position: absolute;
+  rotate: z -4deg;
+  bottom: -2%;
+  left: -20vw;
+  /* z-index: 0; */
+}
+
 .hero-artist-name {
   font-size: 1.2rem;
   font-family: "Permanent Marker";
@@ -244,7 +261,6 @@ small,
 .section--main {
   padding: 0px 5%;
   overflow: hidden;
-  position: relative;
 }
 
 .main-img-hero {
@@ -361,7 +377,20 @@ small,
   transform: skew(-2deg);
 }
 
+.img-box::before {
+  content: "";
+  height: 13rem;
+  width: 212vw;
+  background-color: var(--color-hero-red);
+  position: absolute;
+  top: 18%;
+  left: -13vw;
+  z-index: -100;
+  rotate: z -5deg;
+}
+
 .img-box {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
