@@ -377,7 +377,7 @@ small,
   transform: skew(-2deg);
 }
 
-.img-box::before {
+.img-box--stripe::before {
   content: "";
   height: 13rem;
   width: 212vw;
@@ -387,6 +387,9 @@ small,
   left: -13vw;
   z-index: -100;
   rotate: z -5deg;
+}
+
+.img-box--square::before {
 }
 
 .img-box {
