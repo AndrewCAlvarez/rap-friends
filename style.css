@@ -426,6 +426,8 @@ small,
   /* grid-template-columns: 100vw; */
   /* grid-template-rows: 40vh; */
   margin-top: 8rem;
+  margin-bottom: 4rem;
+  background-color: var(--color-hero-red);
 }
 
 .form {
@@ -518,6 +520,7 @@ small,
 .img-form {
   /* height: 40vw; */
   width: 100%;
+  opacity: 0.9;
 }
 
 .form--newsletter button {
