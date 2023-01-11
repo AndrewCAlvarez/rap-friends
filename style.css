@@ -4,7 +4,8 @@
   --color-heading--secondary: #bebebe;
   --color-txt: #999;
   --color-txt--sub: #aaaaaa;
-  --color-hero-red: rgb(218, 65, 4);
+  --color-hero-red: #da4104;
+  --color-hero-red-tint: #f4c6b4;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
 
@@ -412,16 +413,83 @@ small,
   width: 95%;
 }
 
-/* Triangles used to create chat bubble */
-/* .main-text-left::after {
-  content: "";
+/************************************
+*********************
+
+      NEWSLETTER SECTION 
+
+*****************
+*************************************/
+.section--newsletter {
+  display: grid;
+  /* grid-template-columns: 100vw; */
+  /* grid-template-rows: 40vh; */
+  margin-top: 2rem;
+}
+
+.form {
+  background-color: var(--color-hero-red);
+}
+
+.heading--newsletter {
+  position: relative;
+  color: var(--color-heading-primary);
+  /* background-color: var(--color-bg); */
+  font-family: "Permanent Marker", cursive;
+  /* border: 0.2rem solid var(--color-bg); */
+  font-size: 3.3rem;
+  letter-spacing: 0.3rem;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.heading--newsletter::before {
+  /* tag above heading */
+  content: "URBAN UNDERGROUND";
+  font-size: 1.3rem;
+  padding: 0px 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid var(--color-bg); */
+  border-radius: 5%;
+  background-color: var(--color-heading-primary);
+  color: var(--color-bg);
+  /* font-family: var(--font-body); */
   position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid var(--color-txt);
-  scale: 0.3;
-  rotate: z 20deg;
-  left: 0;
-} */
+  top: -50%;
+  left: -3%;
+  /* rotate: -3deg; */
+}
+
+.form--newsletter ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.form--newsletter li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-hero-red-tint);
+  margin-bottom: 2rem;
+}
+
+.form--newsletter label {
+  color: var(--color-hero-red-tint);
+}
+
+.form--newsletter input {
+  background-color: var(--color-hero-red);
+  border: none;
+}
+
+.img-form {
+  /* height: 40vw; */
+  width: 100%;
+}
