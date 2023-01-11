@@ -5,6 +5,7 @@
   --color-txt: #999;
   --color-txt--sub: #aaaaaa;
   --color-hero-red: #da4104;
+  --color-hero-red-tint-2: #e16736;
   --color-hero-red-tint: #f4c6b4;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
@@ -424,11 +425,20 @@ small,
   display: grid;
   /* grid-template-columns: 100vw; */
   /* grid-template-rows: 40vh; */
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .form {
   background-color: var(--color-hero-red);
+  padding-bottom: 4rem;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15%;
 }
 
 .heading--newsletter {
@@ -439,9 +449,8 @@ small,
   /* border: 0.2rem solid var(--color-bg); */
   font-size: 3.3rem;
   letter-spacing: 0.3rem;
-
-  display: flex;
-  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: -2rem;
 }
 
 .heading--newsletter::before {
@@ -449,18 +458,21 @@ small,
   content: "URBAN UNDERGROUND";
   font-size: 1.3rem;
   padding: 0px 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  max-width: 21rem;
   /* border: 2px solid var(--color-bg); */
-  border-radius: 5%;
+  border-radius: 1px;
   background-color: var(--color-heading-primary);
   color: var(--color-bg);
+  margin: 0 auto;
   /* font-family: var(--font-body); */
-  position: absolute;
-  top: -50%;
-  left: -3%;
+
   /* rotate: -3deg; */
+}
+
+.heading--newsletter-sub {
+  color: var(--color-hero-red-tint);
+  font-family: "Permanent Marker", cursive;
 }
 
 .form--newsletter ul {
@@ -476,20 +488,49 @@ small,
 .form--newsletter li {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--color-hero-red-tint);
-  margin-bottom: 2rem;
 }
 
 .form--newsletter label {
   color: var(--color-hero-red-tint);
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .form--newsletter input {
   background-color: var(--color-hero-red);
   border: none;
+  font-size: 40rem;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  color: var(--color-hero-red-tint);
+  margin-bottom: 4.8rem;
+  /* border-bottom: 1px solid var(--color-hero-red-tint); */
+  box-shadow: inset 0rem -0.1rem 0rem 0rem var(--color-hero-red-tint);
+}
+
+.form--newsletter input:focus {
+  background-color: var(--color-hero-red-tint-2);
+  outline: none;
+  caret-color: var(--color-hero-red-tint);
+  font-size: 2rem;
 }
 
 .img-form {
   /* height: 40vw; */
   width: 100%;
+}
+
+.form--newsletter button {
+  border: none;
+  border-radius: 1px;
+  background-color: var(--color-hero-red-tint-2);
+  font-size: 1.2rem;
+  color: var(--color-hero-red-tint);
+  height: 3.2rem;
+  transition: all 0.3s;
+}
+
+.form--newsletter button:focus {
+  outline: none;
+  box-shadow: inset 0rem 0rem 0rem 0.1rem var(--color-hero-red-tint);
 }
