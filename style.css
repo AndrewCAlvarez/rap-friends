@@ -586,3 +586,15 @@ small,
 .newsletter-disclosure a:hover {
   color: var(--color-hero-red-tint);
 }
+
+/************************************
+*********************
+
+      NEWSLETTER SECTION 
+
+*****************
+*************************************/
+
+.article-img {
+  width: 100%;
+}
