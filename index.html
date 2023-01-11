@@ -49,26 +49,31 @@
           <p class="author-name">Julius Martin</p>
           <p class="author-name">Nov 18, 2022</p>
         </div>
+        <ul class="hero-icon-container">
+          <li>
+            <a class="icon-hero" href="#"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="icon-hero" href="#"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="icon-hero" href="#"
+              ><ion-icon name="logo-pinterest"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="icon-hero" href="#"
+              ><ion-icon name="bookmark-outline"></ion-icon
+            ></a>
+          </li>
+        </ul>
       </div>
       <div class="hero-main">
         <h4 class="hero-artist-name">Feat. <br />Layzie L.U.</h4>
-        <!-- <p class="hero-artist-description">
-          An American rapper from California, Layzie L.U. is best known for his
-          political and conscious content in his music.
-           An American rapper from California, Layzie L.U. is best known for his
-          political and conscious content in his music, often tackling issues
-          such as immigration, racism and police brutality. He is also known as
-          a conscious lyricist, often expressing his thoughts about the state of
-          the world with powerful imagery and metaphors. -->
-
-        <!-- Layzie L.U.
-          has released several projects and has collaborated with other artists
-          such as Snoop Dogg, Lupe Fiasco and Rakim. His music has been praised
-          for its strength and integrity, and his lyrics have been praised for
-          their poignancy and relevance to the current times. Layzie L.U. is an
-          artist who continues to push the boundaries of hip-hop and inspire
-          people to fight for justice and equality. 
-        </p> -->
       </div>
     </section>
     <!-- MAIN-->
@@ -191,14 +196,30 @@
           <ul>
             <li>
               <label for="name">Name</label>
-              <input type="text" id="name" name="user_name" />
+              <input
+                class="newsletter-input"
+                type="text"
+                id="name"
+                name="user_name"
+              />
             </li>
             <li>
               <label for="email">Email</label>
-              <input type="email" id="email" name="user_email" />
+              <input
+                class="newsletter-input"
+                type="email"
+                id="email"
+                name="user_email"
+              />
             </li>
-            <li class="button">
-              <button type="button">Sign up</button>
+            <li>
+              <button id="btn-newsletter" class="btn-newsletter" type="button">
+                Sign up
+              </button>
+            </li>
+            <li class="newsletter-disclosure">
+              By signing up you agree to our <a href="#">User Agreement</a> and
+              <a href="#">Privacy Policy & Cookie Statement.</a>
             </li>
           </ul>
         </form>

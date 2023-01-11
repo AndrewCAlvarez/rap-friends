@@ -6,6 +6,7 @@
   --color-txt--sub: #aaaaaa;
   --color-hero-red: #da4104;
   --color-hero-red-tint-2: #e16736;
+  --color-hero-red-tint-4: #e98d68;
   --color-hero-red-tint: #f4c6b4;
   --highlight-primary: #ed5959;
   --highlight-secondary: rgba(241, 241, 241, 0.529);
@@ -209,6 +210,30 @@ small,
   font-family: "Permanent Marker", cursive;
   letter-spacing: 0.3rem;
   color: var(--color-heading--secondary);
+}
+
+.hero-icon-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.icon-hero {
+  color: var(--color-heading--secondary);
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.icon-hero:link,
+.icon-hero:visited {
+  color: var(--color-heading--secondary);
+}
+
+.icon-hero:hover {
+  color: var(--color-heading-primary);
 }
 
 .hero-main {
@@ -467,9 +492,7 @@ small,
   background-color: var(--color-heading-primary);
   color: var(--color-bg);
   margin: 0 auto;
-  /* font-family: var(--font-body); */
-
-  /* rotate: -3deg; */
+  margin-bottom: 2rem;
 }
 
 .heading--newsletter-sub {
@@ -498,7 +521,7 @@ small,
   margin-bottom: 1.6rem;
 }
 
-.form--newsletter input {
+.newsletter-input {
   background-color: var(--color-hero-red);
   border: none;
   font-size: 40rem;
@@ -510,7 +533,12 @@ small,
   box-shadow: inset 0rem -0.1rem 0rem 0rem var(--color-hero-red-tint);
 }
 
-.form--newsletter input:focus {
+.newsletter-input:hover {
+  background-color: var(--color-hero-red-tint-2);
+  font-size: 2rem;
+}
+
+.newsletter-input:focus {
   background-color: var(--color-hero-red-tint-2);
   outline: none;
   caret-color: var(--color-hero-red-tint);
@@ -523,7 +551,7 @@ small,
   opacity: 0.9;
 }
 
-.form--newsletter button {
+.btn-newsletter {
   border: none;
   border-radius: 1px;
   background-color: var(--color-hero-red-tint-2);
@@ -531,9 +559,30 @@ small,
   color: var(--color-hero-red-tint);
   height: 3.2rem;
   transition: all 0.3s;
+  margin-bottom: 2rem;
 }
 
-.form--newsletter button:focus {
+.btn-newsletter:hover {
+  color: var(--color-hero-red-tint-2);
+  background-color: var(--color-hero-red-tint);
+  cursor: pointer;
+}
+
+.btn-newsletter:focus {
   outline: none;
   box-shadow: inset 0rem 0rem 0rem 0.1rem var(--color-hero-red-tint);
+}
+
+.newsletter-disclosure {
+  text-align: center;
+  color: var(--color-hero-red-tint-4);
+}
+
+.newsletter-disclosure a {
+  color: var(--color-hero-red-tint-4);
+  transition: all 0.3s;
+}
+
+.newsletter-disclosure a:hover {
+  color: var(--color-hero-red-tint);
 }
