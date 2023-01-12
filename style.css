@@ -430,7 +430,7 @@ small,
 
 .img-box-img {
   width: 100%;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
 }
 
 .img-box-txt {
@@ -466,6 +466,15 @@ small,
   justify-content: center;
   align-items: center;
   margin-top: -15%;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(
+      rgba(218, 65, 4, 0.2),
+      rgba(218, 65, 4, 0.2)
+    ),
+    url(./images/hero.jpg);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading--newsletter {
@@ -549,6 +558,7 @@ small,
   /* height: 40vw; */
   width: 100%;
   opacity: 0.9;
+  display: none;
 }
 
 .btn-newsletter {
