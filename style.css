@@ -468,8 +468,8 @@ small,
   margin-top: -15%;
   margin-bottom: 2rem;
   background-image: linear-gradient(
-      rgba(218, 65, 4, 0.2),
-      rgba(218, 65, 4, 0.2)
+      rgba(218, 65, 4, 0.5),
+      rgba(218, 65, 4, 0.5)
     ),
     url(./images/hero.jpg);
   background-origin: border-box;
@@ -489,20 +489,18 @@ small,
   margin-bottom: -2rem;
 }
 
-.heading--newsletter::before {
-  /* tag above heading */
+/* .heading--newsletter::before {
   content: "URBAN UNDERGROUND";
   font-size: 1.3rem;
   padding: 0px 0.5rem;
   display: block;
   max-width: 21rem;
-  /* border: 2px solid var(--color-bg); */
   border-radius: 1px;
   background-color: var(--color-heading-primary);
   color: var(--color-bg);
   margin: 0 auto;
   margin-bottom: 2rem;
-}
+} */
 
 .heading--newsletter-sub {
   color: var(--color-hero-red-tint);
@@ -540,6 +538,10 @@ small,
   margin-bottom: 4.8rem;
   /* border-bottom: 1px solid var(--color-hero-red-tint); */
   box-shadow: inset 0rem -0.1rem 0rem 0rem var(--color-hero-red-tint);
+
+  /* This is needed to fix issues with Safari */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0%;
 }
 
 .newsletter-input:hover {
@@ -633,10 +635,16 @@ small,
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0 5%;
+  padding: 0 10%;
   background-image: linear-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 1));
 }
 
 .article-heading {
   font-family: var(--font-heading);
+  margin: 0;
+}
+
+.article-author {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
