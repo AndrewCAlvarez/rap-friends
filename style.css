@@ -4,6 +4,7 @@
   --color-heading--secondary: #bebebe;
   --color-txt: #999;
   --color-txt--sub: #aaaaaa;
+  --color-txt-shade-1: #626262;
   --color-hero-red: #da4104;
   --color-hero-red-tint-2: #e16736;
   --color-hero-red-tint-4: #e98d68;
@@ -703,4 +704,56 @@ small,
 .icon-footer {
   color: var(--color-txt--sub);
   font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.icon-footer:hover {
+  color: var(--color-heading-primary);
+}
+
+.footer-dropdown {
+  margin-bottom: 2rem;
+}
+
+.footer-dropdown button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-txt);
+  font-family: var(--font-heading);
+  border: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+
+.footer-dropdown button:hover {
+  cursor: pointer;
+  color: var(--color-heading-primary);
+}
+
+.footer-dropdown ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-dropdown li {
+  margin-bottom: 1rem;
+}
+
+.footer-dropdown a {
+  text-decoration: none;
+  color: var(--color-txt);
+}
+
+.footer-legal {
+  padding: 0 5%;
+  color: var(--color-txt-shade-1);
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+
+.footer-legal a {
+  color: var(--color-txt-shade-1);
 }
