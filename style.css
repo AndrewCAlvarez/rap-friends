@@ -606,6 +606,9 @@ small,
 
 *****************
 *************************************/
+.section--aside {
+  margin-bottom: 4rem;
+}
 
 .section--aside .heading--secondary {
   font-family: var(--font-heading);
@@ -636,7 +639,7 @@ small,
   bottom: 0;
   left: 0;
   padding: 0 10%;
-  background-image: linear-gradient(rgba(1, 1, 1, 0), rgba(1, 1, 1, 1));
+  background-image: linear-gradient(#12121200, #12121284, #121212);
 }
 
 .article-heading {
@@ -647,4 +650,25 @@ small,
 .article-author {
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+/************************************
+*********************
+
+     FOOTER SECTION 
+
+*****************
+*************************************/
+.section--footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.footer-heading h4 {
+  font-family: var(--font-heading);
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
