@@ -15,3 +15,6 @@ function toggleMenu() {
     isToggled = !isToggled;
   }
 }
+
+// FOOTER DROPDOWN MENU
+let footerDropdown = document.querySelectorAll("#footer-dropdown");

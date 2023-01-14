@@ -240,7 +240,7 @@ small,
 .hero-main {
   /* background-image: url(./images/urban.jpg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-    url(./images/urban.jpg);
+    url(./images/compressed/urban-min.jpg);
   height: 50rem;
   /* background-size: cover; */
   /* background-position-x: -9rem; */
@@ -472,7 +472,7 @@ small,
       rgba(218, 65, 4, 0.5),
       rgba(218, 65, 4, 0.5)
     ),
-    url(./images/hero.jpg);
+    url(./images/compressed/hero-min.jpg);
   background-origin: border-box;
   background-repeat: no-repeat;
   background-size: cover;
