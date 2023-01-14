@@ -23,12 +23,11 @@ function toggleMenu() {
 
 let footerDropdownBtn = document.querySelectorAll(".footer-dropdown-btn");
 let footerDropdownUL = document.querySelectorAll(".footer-dropdown-ul");
-// console.log(footerDropdownBtn[0]);
+
 for (let i = 0; i < footerDropdownBtn.length; i++) {
   footerDropdownBtn[i].addEventListener("click", (click) => {
     if (footerDropdownUL[i].className === "footer-dropdown-ul") {
       footerDropdownUL[i].className = "footer-dropdown-ul-open";
-      console.log(footerDropdownUL[0].className);
     } else {
       footerDropdownUL[i].className = "footer-dropdown-ul";
     }

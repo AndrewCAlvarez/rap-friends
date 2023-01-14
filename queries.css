@@ -1,0 +1,6 @@
+@import url(variables.css);
+
+@media (max-width: 447px) {
+  .heading--primary {
+  }
+}

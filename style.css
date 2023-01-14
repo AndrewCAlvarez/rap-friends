@@ -1,21 +1,4 @@
-:root {
-  --color-bg: #121212;
-  --color-heading-primary: #d6d6d6;
-  --color-heading--secondary: #bebebe;
-  --color-txt: #999;
-  --color-txt--sub: #aaaaaa;
-  --color-txt-shade-1: #626262;
-  --color-hero-red: #da4104;
-  --color-hero-red-tint-2: #e16736;
-  --color-hero-red-tint-4: #e98d68;
-  --color-hero-red-tint: #f4c6b4;
-  --highlight-primary: #ed5959;
-  --highlight-secondary: rgba(241, 241, 241, 0.529);
-
-  /* Font */
-  --font-heading: "Permanent Marker", cursive;
-  --font-body: "Poppins", sans-serif;
-}
+@import url(./variables.css);
 
 html {
   font-size: 100%;
@@ -244,8 +227,8 @@ small,
   height: 50rem;
   /* background-size: cover; */
   /* background-position-x: -9rem; */
-  background-size: 300%;
-  background-position: 47% 0%;
+  background-size: calc(100rem);
+  background-position: 50% 11%;
   display: flex;
   gap: 2rem;
   flex-direction: column;
