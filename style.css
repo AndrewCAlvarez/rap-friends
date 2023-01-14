@@ -547,14 +547,15 @@ small,
 
 .newsletter-input:hover {
   background-color: var(--color-hero-red-tint-2);
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  padding-top: 2rem;
 }
 
 .newsletter-input:focus {
   background-color: var(--color-hero-red-tint-2);
   outline: none;
   caret-color: var(--color-hero-red-tint);
-  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .img-form {
@@ -715,7 +716,7 @@ small,
   margin-bottom: 2rem;
 }
 
-.footer-dropdown button {
+.footer-dropdown-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -728,18 +729,24 @@ small,
   transition: all 0.3s;
 }
 
-.footer-dropdown button:hover {
+.footer-dropdown-btn:hover {
   cursor: pointer;
   color: var(--color-heading-primary);
 }
 
-.footer-dropdown ul {
+.footer-dropdown-ul {
+  display: none;
   list-style: none;
   margin: 0;
 }
 
 .footer-dropdown li {
   margin-bottom: 1rem;
+}
+
+.footer-dropdown li a:hover {
+  cursor: pointer;
+  color: var(--color-heading-primary);
 }
 
 .footer-dropdown a {

@@ -15,6 +15,16 @@ function toggleMenu() {
     isToggled = !isToggled;
   }
 }
-
+//////////////////////////////////////
+//
 // FOOTER DROPDOWN MENU
-let footerDropdown = document.querySelectorAll("#footer-dropdown");
+//
+//////////////////////////////////////
+
+let footerDropdownBtn = document.querySelectorAll(".footer-dropdown-btn");
+let footerDropdownUL = document.querySelectorAll(".footer-dropdown-ul");
+
+// console.log(footerDropdownBtn[0]);
+for (let i = 0; i < footerDropdownBtn.length; i++) {
+  console.log(footerDropdownBtn[i]);
+}
