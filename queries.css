@@ -1,6 +1,68 @@
 @import url(variables.css);
 
-@media (max-width: 447px) {
-  .heading--primary {
+@media screen and (min-width: 453px) {
+  .hero-heading {
+    max-width: 74%;
+  }
+}
+
+@media screen and (min-width: 591px) {
+  .hero-heading {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 639px) {
+  .hero-heading {
+    max-width: 81%;
+  }
+}
+
+@media screen and (min-width: 746px) {
+  .hero-heading {
+    max-width: 73%;
+  }
+}
+
+@media screen and (min-width: 876px) {
+  .hero-heading {
+    max-width: 66%;
+  }
+}
+
+@media screen and (min-width: 1035px) {
+  .hero-heading {
+    max-width: 87%;
+  }
+}
+
+@media screen and (min-width: 1232px) {
+  .hero-heading {
+    max-width: 79%;
+  }
+}
+
+@media screen and (min-width: 1482px) {
+  .hero-heading {
+    max-width: 71%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-main {
+    background-size: 150rem;
+    background-position: 50% 20%;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .hero-heading {
+    max-width: 68%;
+  }
+}
+
+@media screen and (min-width: 2058px) {
+  .hero-heading {
+    max-width: 61%;
   }
 }

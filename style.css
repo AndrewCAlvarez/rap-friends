@@ -163,7 +163,8 @@ small,
   /* Padding on top and bottom allows for the marker effect behind the heading. */
   padding: 4rem 5% 2rem 5%;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
+
   /* color: var(--color-heading-primary); */
 }
 
