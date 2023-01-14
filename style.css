@@ -738,6 +738,14 @@ small,
   display: none;
   list-style: none;
   margin: 0;
+  transition: all 0.3s;
+}
+
+.footer-dropdown-ul-open {
+  display: block;
+  list-style: none;
+  margin: 0;
+  transition: all 0.3s;
 }
 
 .footer-dropdown li {
