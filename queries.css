@@ -10,6 +10,11 @@
   .hero-heading {
     max-width: 100%;
   }
+
+  .hero-artist-name {
+    top: 32%;
+    bottom: calc(50% + -55rem);
+  }
 }
 
 @media screen and (min-width: 639px) {
@@ -36,6 +41,12 @@
   }
 }
 
+@media screen and (min-width: 1153px) {
+  .hero-main::after {
+    rotate: z -2.5deg;
+  }
+}
+
 @media screen and (min-width: 1232px) {
   .hero-heading {
     max-width: 79%;
@@ -53,6 +64,11 @@
     background-size: 150rem;
     background-position: 50% 20%;
   }
+
+  .hero-artist-name {
+    top: 32%;
+    bottom: calc(50% + -141rem);
+  }
 }
 
 @media screen and (min-width: 1650px) {
@@ -61,8 +77,26 @@
   }
 }
 
+@media screen and (min-width: 1877px) {
+  .hero-main::after {
+    rotate: z -1.9deg;
+  }
+}
+
 @media screen and (min-width: 2058px) {
   .hero-heading {
     max-width: 61%;
+  }
+}
+
+@media screen and (min-width: 2390px) {
+  .hero-main {
+    background-size: 167rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .hero-main::after {
+    rotate: z -1.6deg;
   }
 }
