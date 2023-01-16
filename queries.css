@@ -27,11 +27,19 @@
   .hero-heading {
     max-width: 73%;
   }
+
+  .main-text-container {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
 }
 
 @media screen and (min-width: 876px) {
   .hero-heading {
     max-width: 66%;
+  }
+
+  .main-text-container {
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 

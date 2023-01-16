@@ -329,8 +329,8 @@ small,
 }
 
 .main-text-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .main-text {
@@ -340,6 +340,8 @@ small,
   letter-spacing: 1px;
   text-indent: 1rem;
   width: 100%;
+  max-width: 32rem;
+  grid-column: 1/-1;
   /* position: relative; */
 }
 
@@ -361,23 +363,6 @@ small,
   transform: skew(2deg);
 }
 
-/* Triangles used to create chat bubble */
-/* .main-text-right::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid var(--color-txt);
-  scale: 0.5;
-  rotate: z -20deg;
-  left: calc(100% - 5rem);
-} */
-
-.main-text-left {
-}
-
 .main-text-left::before {
   content: "";
   width: 100%;
@@ -397,7 +382,7 @@ small,
   background-color: var(--color-hero-red);
   position: absolute;
   top: 18%;
-  left: -13vw;
+  /* left: -13vw; */
   z-index: -100;
   rotate: z -5deg;
 }
@@ -408,10 +393,14 @@ small,
 .img-box {
   position: relative;
   width: 100%;
+  max-width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 4rem 0;
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 .img-box-img {
@@ -420,9 +409,10 @@ small,
 }
 
 .img-box-txt {
-  color: var(--color-txt--sub);
-  font-size: small;
+  color: var(--color-txt-shade-1);
+  font-size: calc(0.8rem + 1vw);
   width: 95%;
+  text-align: left;
 }
 
 /************************************
