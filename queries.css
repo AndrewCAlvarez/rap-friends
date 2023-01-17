@@ -91,10 +91,21 @@
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
   }
+
+  .main-text-row-1 {
+    grid-column: 1/2;
+  }
+
   .main-text-row-2 {
     grid-row: 1;
     grid-column: 2/3;
     padding-right: 100%;
+    justify-self: left;
+    max-width: 22vw;
+  }
+
+  .main-text-row-3 .img-box {
+    grid-column: 2/3;
     justify-self: left;
   }
 }
@@ -104,8 +115,18 @@
     max-width: 71%;
   }
 
+  .main-heading {
+    margin: 2rem 10%;
+  }
+
   .main-text-container {
     grid-template-columns: 3fr 2fr;
+    margin: 0 10%;
+  }
+
+  .main-text-row-3 .img-box {
+    float: left;
+    margin-top: 1rem;
   }
 }
 

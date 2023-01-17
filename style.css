@@ -361,6 +361,8 @@ small,
 }
 
 .main-text-row-2 .img-box {
+  width: 90%;
+  padding: 0 5%;
 }
 
 .main-text-row-3 {
