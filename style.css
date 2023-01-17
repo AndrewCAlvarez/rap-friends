@@ -340,9 +340,20 @@ small,
   letter-spacing: 1px;
   text-indent: 1rem;
   width: 100%;
-  max-width: 32rem;
+  /* max-width: 32rem; */
   grid-column: 1/-1;
   /* position: relative; */
+}
+
+.main-text-row-1 {
+  grid-column: 1/12;
+  grid-row: 1;
+  display: grid;
+}
+
+.main-text-row-1 .img-box {
+  float: left;
+  margin: 0;
 }
 
 .main-text-right {
@@ -394,6 +405,8 @@ small,
   position: relative;
   width: 100%;
   max-width: 20rem;
+  padding: 0 2rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;

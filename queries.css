@@ -28,9 +28,9 @@
     max-width: 73%;
   }
 
-  .main-text-container {
+  /* .main-text-container {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
+  } */
 
   .articles-container ul {
     grid-template-columns: repeat(2, 1fr);
@@ -42,8 +42,8 @@
     max-width: 66%;
   }
 
-  .main-text-container {
-    grid-template-rows: repeat(3, 1fr);
+  .main-text-row-1 {
+    display: block;
   }
 }
 
