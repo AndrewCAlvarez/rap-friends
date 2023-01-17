@@ -32,6 +32,10 @@
     grid-template-columns: repeat(12, minmax(0, 1fr));
   } */
 
+  .main-text-row-3 {
+    display: block;
+  }
+
   .articles-container ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -42,7 +46,8 @@
     max-width: 66%;
   }
 
-  .main-text-row-1 {
+  .main-text-row-1,
+  .main-text-row-4 {
     display: block;
   }
 
