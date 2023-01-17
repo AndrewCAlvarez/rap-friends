@@ -45,6 +45,10 @@
   .main-text-row-1 {
     display: block;
   }
+
+  .main-text-row-4 {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1035px) {
