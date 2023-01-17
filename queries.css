@@ -103,6 +103,10 @@
   .hero-heading {
     max-width: 71%;
   }
+
+  .main-text-container {
+    grid-template-columns: 3fr 2fr;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -126,6 +130,10 @@
 @media screen and (min-width: 1877px) {
   .hero-main::after {
     rotate: z -1.9deg;
+  }
+
+  .section--main {
+    padding: 0 10%;
   }
 }
 
