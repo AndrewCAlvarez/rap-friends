@@ -79,7 +79,7 @@
     padding: 0;
   }
 
-  .form-newsletter {
+  .form--newsletter {
     margin: 2rem 0;
   }
 }
@@ -129,6 +129,10 @@
   .main-text-row-3 .img-box {
     grid-column: 2/3;
     justify-self: left;
+  }
+
+  .section--newsletter {
+    margin: 8rem auto;
   }
 }
 

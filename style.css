@@ -525,8 +525,7 @@ small,
 *************************************/
 .section--newsletter {
   display: grid;
-  /* grid-template-columns: 100vw; */
-  /* grid-template-rows: 40vh; */
+  max-width: 110rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
   background-color: var(--color-hero-red);
