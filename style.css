@@ -595,8 +595,10 @@ small,
 .articles-container ul {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 0;
   margin: 0;
   box-sizing: border-box;
