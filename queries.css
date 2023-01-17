@@ -36,8 +36,16 @@
     display: block;
   }
 
+  .section--aside {
+    margin: 0 5%;
+  }
+
   .articles-container ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section--newsletter {
+    margin: 8rem 5%;
   }
 }
 
@@ -59,6 +67,20 @@
 @media screen and (min-width: 1035px) {
   .hero-heading {
     max-width: 87%;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-heading {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .form-newsletter {
+    margin: 2rem 0;
   }
 }
 
@@ -139,6 +161,10 @@
   .hero-artist-name {
     top: 32%;
     bottom: calc(50% + -141rem);
+  }
+
+  .section--aside {
+    margin: 0 10%;
   }
 }
 
