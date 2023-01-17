@@ -789,6 +789,7 @@ small,
   color: var(--color-txt-shade-1);
   text-align: justify;
   margin-bottom: 4rem;
+  max-width: 75rem;
 }
 
 .footer-legal a {

@@ -15,6 +15,14 @@
     top: 32%;
     bottom: calc(50% + -55rem);
   }
+
+  .articles-container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-dropdown {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 639px) {
@@ -38,10 +46,6 @@
 
   .section--aside {
     margin: 0 5%;
-  }
-
-  .articles-container ul {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .section--newsletter {
@@ -81,6 +85,42 @@
 
   .form--newsletter {
     margin: 2rem 0;
+  }
+
+  .section--footer {
+    grid-template-columns: repeat(3, 1fr);
+    /* border-top: 1px solid var(--color-heading--secondary); */
+  }
+
+  .section--footer::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: var(--color-heading--secondary);
+    grid-column: 1/-1;
+    margin-bottom: 4rem;
+  }
+
+  .footer-heading {
+    border: none;
+  }
+
+  .footer-dropdown {
+    align-self: center;
+  }
+
+  .footer-dropdown-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  .footer-dropdown-btn ion-icon {
+    display: none;
+  }
+
+  .footer-legal {
+    grid-column: 1/-1;
   }
 }
 
@@ -168,6 +208,10 @@
   }
 
   .section--aside {
+    margin: 0 10%;
+  }
+
+  .section--footer {
     margin: 0 10%;
   }
 }
