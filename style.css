@@ -97,7 +97,7 @@ small,
 .nav {
   background-color: var(--color-bg);
   width: 90%;
-  height: 3rem;
+  height: calc(3rem + 1vw);
   position: fixed;
   top: 0;
   z-index: 100;
@@ -108,20 +108,29 @@ small,
 }
 
 .nav-list {
-  padding: 2rem 5% 2rem 5%;
-  display: flex;
+  padding: 5rem 5% 5rem 5%;
   width: 90%;
   color: var(--color-txt);
   list-style: none;
   background: var(--color-bg);
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
   position: fixed;
-  top: -100vh;
   z-index: 90;
-
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+
+.nav-list-open {
+  top: 0;
+  opacity: 1;
+}
+
+.nav-list-closed {
+  top: -100vh;
+  opacity: 0;
 }
 
 .nav-list-item {

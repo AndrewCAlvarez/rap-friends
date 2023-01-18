@@ -179,6 +179,7 @@
 @media screen and (min-width: 1482px) {
   .hero-heading {
     max-width: 71%;
+    padding: 4rem 10% 2rem 10%;
   }
 
   .main-heading {

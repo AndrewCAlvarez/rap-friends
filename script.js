@@ -5,12 +5,14 @@ let isToggled = false;
 function toggleMenu() {
   if (isToggled) {
     // navList.style.display = "none";
-    navList.style.top = "-100vh";
+    // navList.style.top = "-100vh";
+    navList.setAttribute("class", "nav-list nav-list-closed");
     menuBtn.setAttribute("name", "menu-outline");
     isToggled = !isToggled;
   } else {
     // navList.style.display = "flex";
-    navList.style.top = "0";
+    // navList.style.top = "0";
+    navList.setAttribute("class", "nav-list nav-list-open");
     menuBtn.setAttribute("name", "close-outline");
     isToggled = !isToggled;
   }
