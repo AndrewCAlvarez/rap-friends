@@ -94,6 +94,10 @@ small,
   text-decoration: none;
 }
 
+.logo--nav:hover {
+  color: var(--color-heading-primary);
+}
+
 .nav {
   background-color: var(--color-bg);
   width: 90%;
@@ -135,11 +139,18 @@ small,
 
 .nav-list-item {
   color: var(--color-txt);
+  font-family: var(--font-heading);
+  letter-spacing: 0.2rem;
+  transition: all 0.3s;
 }
 
 .nav-list-item:visited,
 .nav-list-item:link {
   text-decoration: none;
+}
+
+.nav-list-item:hover {
+  color: var(--color-heading-primary);
 }
 
 .icon--menu {
@@ -498,6 +509,11 @@ small,
 .article-img {
   width: 100%;
   filter: opacity(0.7);
+  transition: all 0.5s;
+}
+
+.article-img:hover {
+  transform: scale(1.4);
 }
 
 /* This styling is to adjust for one image that is not the same size as the rest. */
@@ -505,6 +521,11 @@ small,
   transform: scale(1.3);
   padding-top: 5%;
   padding-right: 50%;
+  transition: all 0.5s;
+}
+
+.article-img-diva:hover {
+  transform: scale(1.7);
 }
 
 .aside-text {
@@ -523,6 +544,8 @@ small,
 .article-author {
   margin-top: 0;
   margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--color-txt);
 }
 
 /************************************
