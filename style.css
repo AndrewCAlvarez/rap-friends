@@ -673,6 +673,7 @@ small,
   font-size: 1.2rem;
   color: var(--color-hero-red-tint);
   margin-bottom: 3rem;
+  padding-top: 2rem;
   box-shadow: inset 0rem -0.1rem 0rem 0rem var(--color-hero-red-tint);
 
   /* This is needed to fix issues with Safari */
@@ -683,7 +684,7 @@ small,
 .newsletter-input:hover {
   background-color: var(--color-hero-red-tint-2);
   /* font-size: 2rem; */
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .newsletter-input:focus {
