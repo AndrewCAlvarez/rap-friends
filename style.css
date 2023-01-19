@@ -84,7 +84,7 @@ small,
 
 .logo--nav {
   font-family: "Permanent Marker", cursive;
-
+  font-size: calc(0.8rem + 1vw);
   color: var(--color-heading--secondary);
   letter-spacing: 1px;
 }
@@ -112,7 +112,7 @@ small,
 }
 
 .nav-list {
-  padding: 5rem 5% 5rem 5%;
+  padding: calc(3.6rem + 1vw) 5% calc(1rem + 1vw) 5%;
   width: 90%;
   color: var(--color-txt);
   list-style: none;
@@ -154,14 +154,42 @@ small,
 }
 
 .icon--menu {
-  color: var(--color-heading--secondary);
+  color: var(--color-heading-primary);
   font-size: 2rem;
 }
 
 .icon--menu:hover {
   cursor: pointer;
+  color: var(--color-heading-primary);
 }
 
+.icon--signin {
+  font-size: calc(0.5rem + 1vw);
+  color: var(--color-heading--secondary);
+}
+
+.icon--signin:hover {
+  cursor: pointer;
+  color: var(--color-heading-primary);
+}
+
+.btn--signin {
+  background-color: var(--color-bg);
+  color: var(--color-txt);
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-heading);
+  letter-spacing: 0.1rem;
+  font-size: calc(0.2rem + 1vw);
+  border: none;
+}
+
+.btn--signin:hover {
+  cursor: pointer;
+  color: var(--color-heading-primary);
+}
 /************************************
 *********************
 

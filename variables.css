@@ -1,5 +1,6 @@
 :root {
   --color-bg: #121212;
+  --color-bg--opacity: rgba(18, 18, 18, 0.95);
   --color-heading-primary: #d6d6d6;
   --color-heading--secondary: #bebebe;
   --color-txt: #999;
